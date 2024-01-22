@@ -11,7 +11,7 @@ const options = {
     cityName.innerHTML = city;//innerHTML-gives html the power to make direct changes in html/browser
     //hardcode-developer apne man se values daal Diya while making app
   
-    fetch('http://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=${city},${country}' + city, options)
+    fetch('https://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=${city},${country}' + city, options)
       .then(response => response.json())
       .then(response => {
         console.log(response.location.region);//console.log=sopln/print
@@ -49,7 +49,7 @@ const options = {
   getWeather("Delhi","India");
 
   //SHANGHAI API
-  fetch('http://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=Shanghai,China' + city, options)
+  fetch('https://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=Shanghai,China' + city, options)
       .then(response => response.json())
       .then(response => {
         console.log(response.location.region);
@@ -70,7 +70,7 @@ const options = {
       })
 
       //BOSTON API
-  fetch('http://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=Boston,United States of America' + city, options)
+  fetch('https://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=Boston,United States of America' + city, options)
   .then(response => response.json())
   .then(response => {
     console.log(response.location.region);
@@ -91,7 +91,7 @@ const options = {
   })
 
   //LUCKNOW API
-  fetch('http://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=Lucknow,India' + city, options)
+  fetch('https://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=Lucknow,India' + city, options)
       .then(response => response.json())
       .then(response => {
         console.log(response.location.region);
@@ -112,7 +112,7 @@ const options = {
       })
 
       //KOLKATA API
-  fetch('http://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=Kolkata,India' + city, options)
+  fetch('https://api.weatherapi.com/v1/current.json?key=aa316570b8b642f89df72317242001&q=Kolkata,India' + city, options)
   .then(response => response.json())
   .then(response => {
     console.log(response.location.region);
